@@ -5,8 +5,6 @@ import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Main {
-    static volatile AtomicInteger
-            activeThread = new AtomicInteger(0);
     static AtomicInteger writeCount = new AtomicInteger(0);
     static BufferedWriter writer;
     static Thread[] threads;
