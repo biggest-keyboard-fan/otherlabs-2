@@ -1,10 +1,7 @@
 package com.example;
 
-public class Student extends Human {
-    public Student(String name) {
-        super(name, "Student");
-    }
-    private final String messagePrefix = getOccupation() + " " + getName();
+public class Student implements IGoingToWork {
+    private final String messagePrefix = "Student";
     @Override
     public void wakeUp() {
         System.out.println(messagePrefix+" woke up at 7:00 AM");

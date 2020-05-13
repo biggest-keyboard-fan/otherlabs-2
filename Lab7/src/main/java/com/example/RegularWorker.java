@@ -1,10 +1,7 @@
 package com.example;
 
-public class RegularWorker extends Human {
-    public RegularWorker(String name) {
-        super(name, "Regular Worker");
-    }
-    private final String messagePrefix = getOccupation() + " " + getName();
+public class RegularWorker implements IGoingToWork {
+    private final String messagePrefix = "Regular worker";
     @Override
     public void wakeUp() {
         System.out.println(messagePrefix+" woke up at 6:00 AM");

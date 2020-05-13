@@ -1,6 +1,6 @@
 package com.example;
 
-public interface GoingToWork {
+public interface IGoingToWork {
     void wakeUp();
     void eat();
     void goToWork();

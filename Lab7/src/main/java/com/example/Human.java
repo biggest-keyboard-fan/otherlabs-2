@@ -1,10 +1,10 @@
 package com.example;
 
-public abstract class Human implements GoingToWork {
+public class Human {
     private String name; public String getName(){return name;}
-    private String occupation; public String getOccupation(){return occupation;}
-    public Human(String name, String occupation){
+    private IGoingToWork work; public IGoingToWork getWork(){return work;}
+    public Human(String name, IGoingToWork work){
         this.name = name;
-        this.occupation = occupation;
+        this.work = work;
     }
 }
